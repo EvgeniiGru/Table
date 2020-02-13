@@ -1,0 +1,12 @@
+:root{
+  --border: 1px solid #40423d ;
+  --action-color:#3398cc;
+  --white: white;
+  --main_background: #ffffff;
+}
+
+html{background:var(--main_background)}
+
+button{  
+ 
+}

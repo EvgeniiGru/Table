@@ -1,0 +1,126 @@
+
+
+.frame{
+    grid-template-areas: "pannelBt" 
+    "TabelList"
+     "paginator";
+    grid-template-rows: 1fr 20fr 2fr;
+    width: 95vw;
+    height: 95vh;
+    display: grid;
+}
+
+.pannel_bt{
+    grid-area:pannelBt;
+}
+
+.table{
+    grid-area:TabelList;
+}
+
+.item_tabl{
+    grid-template-areas: "Name City Titel Comments";
+    grid-template-columns: 2fr 2fr 15fr 2fr;
+    grid-template-rows: 60px;
+    display: grid;
+    border: none;
+    cursor: pointer;   
+}
+.item_name,.item_title, .item_city, .item_comments,
+.item_name_header,.item_title_header, .item_city_header, .item_comments_header{
+    font: 1em sans-serif;
+    font-family: cursive;
+    resize: none;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.item_name_header,.item_title_header, .item_city_header, .item_comments_header{
+    text-align: center;
+ }
+
+ .item_city, .item_comments
+ ,.item_city_header,.item_comments_header{
+    background: rgba(255, 165, 116, 0.74);
+}
+
+.item_name,.item_title,
+.item_name_header, .item_title_header{
+    background: rgb(89, 210, 186); 
+
+}
+
+.action_filter_green{
+    background: #34ac94;
+}
+
+.action_filter_red{
+    background: rgb(246, 131, 70);
+}
+
+.item_name,.item_name_header{
+    grid-area:Name;
+}
+
+.item_city, .item_city_header{
+    grid-area:City;
+}
+
+.item_title, .item_title_header{
+    grid-area:Titel;
+}
+
+.item_comments{
+    grid-area:Comments;
+}
+
+
+.block_pages{
+    grid-area:paginator;
+    display: inline-flex; 
+    list-style-type:none;
+    align-items: center;
+}
+
+.container{
+    grid-area:paginator;
+    display: inline-flex; 
+    list-style-type:none;
+    align-items: center;
+}
+
+.page,.page_next{
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    width: 30px;
+    height: 30PX;
+    text-align: center;
+    background: inherit;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    margin-left: 3px;
+    margin-right: 3px;
+    background: rgb(255, 165, 116, 0.74);
+}
+
+.page_next
+{
+    border: 2px solid white;
+    color: white;   
+}
+.page_active{
+    background: rgb(89, 210, 186);
+    border: 2px solid white;
+    color: white;
+}
+
+.a_style,
+.a_style:focus,
+.a_style:active{
+    width: 100%;
+    outline: none;
+    display: block;
+}
+
