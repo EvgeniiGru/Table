@@ -1,10 +1,10 @@
 import {createStore, combineReducers, applyMiddleware} from "redux";
 import thunkMiddleware from "redux-thunk";
-import  TablReduser from "./TablReduser"
+import  TablReducer from "./TablReducer"
 
 
 let reducers = combineReducers({
-    tabl:TablReduser
+    table:TablReducer
 });
 
 const store = createStore(reducers,applyMiddleware(thunkMiddleware));
