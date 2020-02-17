@@ -1,10 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Tabl from './Tabl'
-import {getTablMap, getPageNow, changeSort} from '../../redux/TablReduser'
+import Table from './Table'
+import {getTablMap, getPageNow, changeSort} from '../../redux/TablReducer'
 
 
-class TablClass extends React.Component{
+class TableClass extends React.Component{
 
 componentDidMount(){
   this.props.getTablMap()
@@ -12,14 +12,14 @@ componentDidMount(){
 
 
 render() {
-        return <Tabl {...this.props}/>
+        return <Table {...this.props}/>
 }
 }
 
 let mapstate = (state) => {
-    return{...state.tabl}
+    return{...state.table}
 }
 
 export default connect(mapstate,{getTablMap,
     getPageNow,
-    changeSort})(TablClass)
+    changeSort})(TableClass)
