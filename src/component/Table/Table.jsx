@@ -1,9 +1,9 @@
 import React from 'react'
-import classes from './Tab.module.css'
+import classes from './Table.module.css'
 import ReactPaginate from 'react-paginate'
 
 
-const Tabl = (props) => {
+const Table = (props) => {
     let TableItems = props.tablMap.slice(props.countValuePages.start, props.countValuePages.end).map(item => {
         return (
             <li className={classes.item_tabl} key={item.id} id={item.id} onClick={() => {}}>
@@ -69,4 +69,4 @@ let LabelName  = (sortName) =>  {
 }
 
 
-export default Tabl;
+export default Table;
