@@ -83,7 +83,7 @@ const TablReduser = (state = initialization, action) => {
     }
 };
 
-export default TablReduser;
+export default TableReducer;
 
 export const setTablMap = (postMap) => ({ type: SET_TABLE, postMap })
 export const getPageNow = (data) => ({type: GET_PAGE_NOW, data})
