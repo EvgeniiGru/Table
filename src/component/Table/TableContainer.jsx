@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import Table from './Table'
-import {getTablMap, getPageNow, changeSort} from '../../redux/TablReducer'
+import {getTablMap, getPageNow, changeSort} from '../../redux/TableReducer'
 
 
 class TableClass extends React.Component{
