@@ -17,7 +17,7 @@ let initialization = {
     countValuePages:{start:0, end:10}
 }
 
-const TablReduser = (state = initialization, action) => {
+const TableReducer = (state = initialization, action) => {
     switch (action.type) {
         case SET_TABLE:
          return {
